@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <!-- main container  -->
@@ -12,12 +13,7 @@
         <!-- input container-->
         <div class="input-container">
             <h1>Metric/Imperial Unit Conversion</h1>
-            <!-- inputs -->
-            <div class="input">
-                <input type="text" placeholder="20">
-                <button>Convert</button>
-            </div>
-
+            <input id="input-el" type="text" placeholder="20">
         </div>
 
         <!-- result container-->
@@ -26,8 +22,8 @@
             <div class="output">
                 <h2>Length (Meter/Feet)</h2>
                 <p>
-                    <span>20</span> meters = <span>65.616</span> feet | 
-                    <span>20</span> feet = <span>6.096</span> meters
+                    <span class="num-el"></span> meters = <span id="feet-el"></span> feet | 
+                    <span class="num-el"></span> feet = <span id="meter-el"></span> meters
                 </p>
             </div>
 
@@ -35,8 +31,8 @@
             <div class="output">
                 <h2>Volume (Liters/Gallons)</h2>
                 <p>
-                    <span>20</span> liters = <span>65.616</span> gallons | 
-                    <span>20</span> gallons = <span>6.096</span> liters
+                    <span class="num-el"></span> liters = <span id="gallon-el"></span> gallons | 
+                    <span class="num-el"></span> gallons = <span id="litter-el"></span> liters
                 </p>
             </div>
 
@@ -44,8 +40,8 @@
             <div class="output">
                 <h2>Mass (Kilograms/Pounds)</h2>
                 <p>
-                    <span>20</span> kilos = <span>65.616</span> pounds | 
-                    <span>20</span> pounds = <span>6.096</span> kilos
+                    <span class="num-el"></span> kilos = <span id="pound-el"></span> pounds | 
+                    <span class="num-el"></span> pounds = <span id="kilo-el"></span> kilos
                 </p>
             </div>
         </div>
